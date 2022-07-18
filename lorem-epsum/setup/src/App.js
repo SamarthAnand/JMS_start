@@ -11,8 +11,8 @@ function App() {
   // }
   const fetchdata = async () => {
     const response = await fetch("https://hipsum.co/api/?type=hipster-centric&paras=100");
-    const newPara = await response.json();
-    setData(newPara);
+    const data = await response.json();
+    setData(data);
   }
 
   useEffect(() => {
